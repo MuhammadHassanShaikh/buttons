@@ -1,0 +1,112 @@
+//BORDER RADIUS BUTTON
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints.tightFor(height: 100, width: 100),
+              child: ElevatedButton(
+                child: Text('button'),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10))),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+
+
+
+
+
+box button
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: BoxConstraints.tightFor(height: 100, width: 100),
+            child: ElevatedButton(
+              child: Text('button'),
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.brown,
+                  textStyle:
+                      TextStyle(fontSize: 25, fontStyle: FontStyle.italic),
+                  elevation: 25,
+                  shadowColor: Colors.blue,
+                  side: BorderSide(color: Colors.black)),
+            ),
+          ),
+        ),
+      ),
+    ),
+  )
+  );
+}
+
+
+
+BUBBLE BUTTONS
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: Center(
+            child: ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(Icons.bubble_chart),
+              label: Text('button'),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+
+
+
+
+ELEVATED BUTTONS
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: Center(
+            child: ElevatedButton(
+              child: Text('elevated button'),
+              onPressed: () {},
+              onLongPress: () {},
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
